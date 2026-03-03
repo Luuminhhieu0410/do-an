@@ -7,9 +7,10 @@
     "backend",
     "frontend"
   ],
+  "packageManager": "yarn@1.22.19",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx concurrently -c green,blue -n backend,frontend 'yarn workspace backend start' 'yarn workspace frontend dev' "
+    "dev": "concurrently -c green,blue -n backend,frontend \"yarn workspace backend start:dev\" \"yarn workspace frontend dev\" "
   },
   "author": "hieulm",
   "license": "ISC",
